@@ -91,6 +91,7 @@ const phoneDetails = (id) => {
     .then(res => res.json())
     .then(data => modalDisplay(data.data))
 }
+
 // display modal
 const modalDisplay = (modal) => {
     console.log(modal);
