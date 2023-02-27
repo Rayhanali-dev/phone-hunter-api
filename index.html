@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header part start -->
+    <header class="max-w-7xl mx-auto">
+        <div class="navbar flex-col lg:flex-row bg-base-100 my-10">
+            <div class="md:flex-1 block sm:inline-block">
+                <a class="btn btn-ghost normal-case text-4xl md:xl mb-6 md:mb-0">Phone Hunter</a>
+            </div>
+            <div class="md:flex-none  gap-2">
+                <div class="form-control flex md:flex-row gap-5">
+                    <input id="search-field" type="text" placeholder="Search" class="input input-bordered" />
+                    <button id="search-btn" class="btn btn-outline btn-info">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header part end -->
+
+    <!-- main part start -->
+    <main>
+        <section class="max-w-7xl mx-auto">
+            <!-- append all product -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 p-7 lg:p-0" id="phone-container">
+
+            </div>
+
+            <!-- error message -->
+
+            <div id="error-msg" class="text-center mt-56 hidden">
+                <h3 class="text-3xl ">No phone found, please try a new search</h3>
+            </div>
+
+            <!-- spinner -->
+            <div id="loader" class="text-center mt-56 hidden">
+                <button class="btn btn-square loading"></button>
+            </div>
+
+            <!-- show all product btn -->
+            <div id="show-all" class="text-center hidden">
+                <button id="show-all-btn-clicked" class="btn btn-info">Show All</button>
+            </div>
+
+            <!-- Put this part before </body> tag -->
+            <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+            <div class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box" id="modal-box">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- main part end -->
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
